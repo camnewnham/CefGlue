@@ -31,7 +31,7 @@ namespace Xilium.CefGlue.Demo.EtoForms
                 Height = 600,
                 Content = new EtoCefBrowser()
                 {
-                    Address = "https://www.google.com"
+                    Address = "https://www.google.com",
                     LifeSpanHandler = new BrowserLifeSpanHandler(),
                 }
             });
