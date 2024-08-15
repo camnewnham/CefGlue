@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <OperatingSystemAgnosticTargetFramework>$(DefaultTargetDotnetVersion)</OperatingSystemAgnosticTargetFramework>
+        <TargetFramework>$(DefaultTargetDotnetVersion)-windows</TargetFramework>
+        <AssemblyName>Xilium.CefGlue.Demo.EtoForms</AssemblyName>
+        <RootNamespace>Xilium.CefGlue.Demo.EtoForms</RootNamespace>
+        <StartupObject>Xilium.CefGlue.Demo.EtoForms.Program</StartupObject>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eto.Platform.WPF" />
+  </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'DebugWindowlessRender'">
+      <DefineConstants>$(DefineConstants);WINDOWLESS</DefineConstants>
+      <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <Import Project="$(ProjectDir)..\CefGlue.CopyLocal.props" />
+
+    <ItemGroup>
+        <ProjectReference Include="..\CefGlue.EtoForms\CefGlue.EtoForms.csproj" />
+        <ProjectReference Include="..\CefGlue\CefGlue.csproj" />
+        <ProjectReference Include="..\CefGlue.Common\CefGlue.Common.csproj" />
+        <ProjectReference Include="..\CefGlue.Common.Shared\CefGlue.Common.Shared.csproj" />
+    </ItemGroup>
+
+    <Import Project="$(ProjectDir)..\CefGlue.Common\build\CefGlue.Common.targets" />
+</Project>

@@ -5,7 +5,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)' == 'Debug_WindowlessRender'">
+  <PropertyGroup Condition="'$(Configuration)' == 'DebugWindowlessRender'">
     <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
   </PropertyGroup>
 

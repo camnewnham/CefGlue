@@ -10,7 +10,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)'=='Debug_WindowlessRender'">
+  <PropertyGroup Condition="'$(Configuration)'=='DebugWindowlessRender'">
     <DefineConstants>$(DefineConstants);WINDOWLESS</DefineConstants>
   </PropertyGroup>
 

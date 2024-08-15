@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+  <PropertyGroup>
+    <TargetFramework>$(DefaultTargetDotnetVersion)</TargetFramework>
+    <RootNamespace>Xilium.CefGlue.EtoForms</RootNamespace>
+    <AssemblyName>Xilium.CefGlue.EtoForms</AssemblyName>
+    <PackageId>CefGlue.EtoForms$(PackageSuffix)</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eto.Forms" />
+  </ItemGroup>
+    
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DocumentationFile>bin\Release\Xilium.CefGlue.EtoForms.xml</DocumentationFile>
+  </PropertyGroup>
+    
+  <PropertyGroup Condition="'$(Configuration)' == 'DebugWindowlessRender'">
+    <DefineConstants>$(DefineConstants);DEBUG;WINDOWLESS</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <Compile Include="..\CefGlue.Common\BaseCefBrowser.cs">
+      <Link>Common\BaseCefBrowser.cs</Link>
+    </Compile>
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\CefGlue.Common\CefGlue.Common.csproj">
+      <PrivateAssets>none</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\CefGlue\CefGlue.csproj">
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
