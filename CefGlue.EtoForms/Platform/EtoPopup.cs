@@ -16,13 +16,14 @@ namespace Xilium.CefGlue.EtoForms.Platform
             _window = window;
         }
 
-        public static EtoPopup CreatePopupWindow()
+        public static EtoPopup CreatePopupWindow(Window owner)
         {
             Drawable drawable = new Drawable();
 
             var form = new Form()
             {
-                Content = drawable
+                Content = drawable,
+                Owner = owner
             };
             return new EtoPopup(form, drawable);
         }

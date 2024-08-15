@@ -37,7 +37,7 @@ namespace Xilium.CefGlue.EtoForms
 
         internal override IOffScreenPopupHost CreatePopupHost()
         {
-            return EtoPopup.CreatePopupWindow();
+            return EtoPopup.CreatePopupWindow(ParentWindow);
         }
     }
 }
