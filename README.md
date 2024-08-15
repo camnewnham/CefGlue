@@ -6,11 +6,11 @@ It can be used from C# or any other CLR language and provides both Avalonia and 
 
 Here's a table for supported architectures, frameworks and operating systems:
 
-| OS      | x64 | ARM64 | WPF | Avalonia |
-|---------|-----|-------|-----|----------|
-| Windows | ✔️  | ✔️    | ✔️  | ✔️      |
-| macOS   | ✔️  | ✔️    | ❌  | ✔️      |
-| Linux   | ✔️  | 🔘    | ❌  | ✔️      |
+| OS      | x64 | ARM64  | WPF | Avalonia | Eto |
+|---------|-----|--------|-----|----------| --- |
+| Windows | ✔️  | ✔️    | ✔️  | ✔️      |✔️  |
+| macOS   | ✔️  | ✔️    | ❌  | ✔️      |✔️  |
+| Linux   | ✔️  | 🔘    | ❌  | ✔️      |     |
 
 ✔️ Supported
 ❌ Not supported
