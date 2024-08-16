@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OperatingSystemAgnosticTargetFramework>net6.0</OperatingSystemAgnosticTargetFramework>
+    <CefGlueTargetPlatform>osx-x64</CefGlueTargetPlatform>
+    <Version>1.0</Version>
+    <Title>MyRhinoPlugin1</Title>
+    <Description>Description of MyRhinoPlugin1</Description>
+    <TargetExt>.rhp</TargetExt>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\**\*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Eto.Forms" IncludeAssets="compile;build" />
+    <Reference Include="C:\Program Files\Rhino 8\System\RhinoCommon.dll">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+
+  <Import Project="$(ProjectDir)..\CefGlue.CopyLocal.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\CefGlue.EtoForms\CefGlue.EtoForms.csproj" />
+    <ProjectReference Include="..\CefGlue\CefGlue.csproj" />
+    <ProjectReference Include="..\CefGlue.Common\CefGlue.Common.csproj" />
+    <ProjectReference Include="..\CefGlue.Common.Shared\CefGlue.Common.Shared.csproj" />
+  </ItemGroup>
+
+  <Import Project="$(ProjectDir)..\CefGlue.Common\build\CefGlue.Common.targets" />
+  
+</Project>

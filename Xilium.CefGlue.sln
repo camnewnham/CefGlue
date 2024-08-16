@@ -40,7 +40,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.WPF", "CefGlue.WPF\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.WPF", "CefGlue.Demo.WPF\CefGlue.Demo.WPF.csproj", "{EEE81728-1104-4FFD-99D5-DCC214702C38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.EtoForms", "CefGlue.Demo.EtoForms\CefGlue.Demo.EtoForms.csproj", "{16520A1F-5177-4C83-B5A3-45789DA16862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRhinoPlugin1", "MyRhinoPlugin1\MyRhinoPlugin1.csproj", "{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.EtoForms", "CefGlue.Demo.EtoForms\CefGlue.Demo.EtoForms.csproj", "{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -212,22 +214,38 @@ Global
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|ARM64.Build.0 = Debug|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|x64.ActiveCfg = Debug|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|x64.Build.0 = Debug|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|ARM64.ActiveCfg = DebugWindowlessRender|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|ARM64.Build.0 = DebugWindowlessRender|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|x64.ActiveCfg = DebugWindowlessRender|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|x64.Build.0 = DebugWindowlessRender|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|ARM64.ActiveCfg = Release|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|ARM64.Build.0 = Release|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|x64.ActiveCfg = Release|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|x64.Build.0 = Release|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|ARM64.ActiveCfg = ReleaseWPFAvalonia|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
-		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Debug|ARM64.Build.0 = Debug|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Debug|x64.ActiveCfg = Debug|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Debug|x64.Build.0 = Debug|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.DebugWindowlessRender|ARM64.ActiveCfg = DebugWindowlessRender|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.DebugWindowlessRender|ARM64.Build.0 = DebugWindowlessRender|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.DebugWindowlessRender|x64.ActiveCfg = DebugWindowlessRender|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.DebugWindowlessRender|x64.Build.0 = DebugWindowlessRender|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Release|ARM64.ActiveCfg = Release|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Release|ARM64.Build.0 = Release|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Release|x64.ActiveCfg = Release|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.Release|x64.Build.0 = Release|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.ReleaseWPFAvalonia|ARM64.ActiveCfg = ReleaseWPFAvalonia|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
+		{697F6D7F-347D-4C38-B0FA-47FA4C4F5F36}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Debug|ARM64.Build.0 = Debug|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Debug|x64.ActiveCfg = Debug|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Debug|x64.Build.0 = Debug|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.DebugWindowlessRender|ARM64.ActiveCfg = DebugWindowlessRender|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.DebugWindowlessRender|ARM64.Build.0 = DebugWindowlessRender|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.DebugWindowlessRender|x64.ActiveCfg = DebugWindowlessRender|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.DebugWindowlessRender|x64.Build.0 = DebugWindowlessRender|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Release|ARM64.ActiveCfg = Release|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Release|ARM64.Build.0 = Release|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Release|x64.ActiveCfg = Release|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.Release|x64.Build.0 = Release|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.ReleaseWPFAvalonia|ARM64.ActiveCfg = ReleaseWPFAvalonia|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
+		{66B2C9A7-505B-48CF-87CA-9E98B729C7B0}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
