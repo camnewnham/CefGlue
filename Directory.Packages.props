@@ -22,6 +22,7 @@
 
         <PackageVersion Include="Eto.Forms" Version="2.8.3" />
         <PackageVersion Include="Eto.Platform.WPF" Version="2.8.3" />
+        <PackageVersion Include="Eto.Platform.Mac64" Version="2.8.3" />
         <PackageVersion Include="Eto.Platform.MacOS" Version="2.8.3" />
       
         <PackageVersion Include="Dotnet.Bundle" Version="0.9.13" />

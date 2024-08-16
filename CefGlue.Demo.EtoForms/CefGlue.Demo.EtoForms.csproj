@@ -1,23 +1,28 @@
-﻿<Project Sdk="Eto.Forms/2.7.5">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <!--
     Set the BuildPlatform property to the Eto platform you wish to build for.
     The default is the platform you are building on.
-    Valid values: Wpf, Windows, Mac64, XamMac2, Gtk, Direct2D
+    Valid values: Wpf, Windows, MacOS, Mac64, XamMac2, Gtk, Direct2D
   -->
 
   <PropertyGroup>
-    <BuildPlatform>Wpf</BuildPlatform>
-    <TargetFramework>net6.0</TargetFramework>
+    <EtoPlatform>Wpf</EtoPlatform>
+    <ApplicationIdentifier>com.Xilium.CefGlue.Demo.EtoForms</ApplicationIdentifier>
+    <TargetFramework>$(DefaultTargetDotnetVersion)</TargetFramework>
+    <TargetFramework Condition="$(EtoPlatform) == 'MacOS'">$(TargetFramework)-macos</TargetFramework>
+    <TargetFramework Condition="$(EtoPlatform) == 'Wpf'">$(TargetFramework)-windows</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <OutputType Condition="$(EtoPlatform) == 'Wpf'">WinExe</OutputType>
     <AssemblyName>Xilium.CefGlue.Demo.EtoForms</AssemblyName>
     <RootNamespace>Xilium.CefGlue.Demo.EtoForms</RootNamespace>
     <StartupObject>Xilium.CefGlue.Demo.EtoForms.Program</StartupObject>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Eto.Forms" />
-    <PackageReference Include="Eto.Platform.$(BuildPlatform)" />
+    <PackageReference Include="Eto.Platform.$(EtoPlatform)"/>
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'DebugWindowlessRender'">
