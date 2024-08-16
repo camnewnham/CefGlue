@@ -9,6 +9,7 @@
   <PropertyGroup>
     <EtoPlatform>Wpf</EtoPlatform>
     <ApplicationIdentifier>com.Xilium.CefGlue.Demo.EtoForms</ApplicationIdentifier>
+    <OperatingSystemAgnosticTargetFramework>$(DefaultTargetDotnetVersion)</OperatingSystemAgnosticTargetFramework>
     <TargetFramework>$(DefaultTargetDotnetVersion)</TargetFramework>
     <TargetFramework Condition="$(EtoPlatform) == 'MacOS'">$(TargetFramework)-macos</TargetFramework>
     <TargetFramework Condition="$(EtoPlatform) == 'Wpf'">$(TargetFramework)-windows</TargetFramework>
@@ -17,11 +18,9 @@
     <AssemblyName>Xilium.CefGlue.Demo.EtoForms</AssemblyName>
     <RootNamespace>Xilium.CefGlue.Demo.EtoForms</RootNamespace>
     <StartupObject>Xilium.CefGlue.Demo.EtoForms.Program</StartupObject>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eto.Forms" />
     <PackageReference Include="Eto.Platform.$(EtoPlatform)"/>
   </ItemGroup>
 
