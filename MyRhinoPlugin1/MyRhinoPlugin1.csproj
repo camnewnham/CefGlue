@@ -16,7 +16,7 @@
   
   <ItemGroup>
     <PackageReference Include="Eto.Forms" IncludeAssets="compile;build" />
-    <Reference Include="C:\Program Files\Rhino 8\System\RhinoCommon.dll">
+    <Reference Include="RhinoCommon.dll">
       <Private>False</Private>
     </Reference>
   </ItemGroup>
