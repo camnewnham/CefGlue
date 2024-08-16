@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
   <PropertyGroup>
-    <TargetFramework>$(DefaultTargetDotnetVersion)</TargetFramework>
+    <TargetFrameworks>$(TargetDotnetVersions)</TargetFrameworks>
     <RootNamespace>Xilium.CefGlue.EtoForms</RootNamespace>
     <AssemblyName>Xilium.CefGlue.EtoForms</AssemblyName>
     <PackageId>CefGlue.EtoForms$(PackageSuffix)</PackageId>

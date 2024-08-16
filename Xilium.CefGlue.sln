@@ -34,13 +34,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Tests", "CefGlue.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Common.Shared", "CefGlue.Common.Shared\CefGlue.Common.Shared.csproj", "{BA0F8218-A7D3-4C90-AA4D-F914A3C974E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.EtoForms", "CefGlue.Demo.EtoForms\CefGlue.Demo.EtoForms.csproj", "{2A735121-5AE6-4B82-B504-A66FDE8719BC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.EtoForms", "CefGlue.EtoForms\CefGlue.EtoForms.csproj", "{8FDFA2EA-764E-4AAF-9B5B-27C466920E10}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.WPF", "CefGlue.WPF\CefGlue.WPF.csproj", "{8BD4D13E-2436-46C9-9207-EB653F7DD7F9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.WPF", "CefGlue.Demo.WPF\CefGlue.Demo.WPF.csproj", "{EEE81728-1104-4FFD-99D5-DCC214702C38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CefGlue.Demo.EtoForms", "CefGlue.Demo.EtoForms\CefGlue.Demo.EtoForms.csproj", "{16520A1F-5177-4C83-B5A3-45789DA16862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -164,22 +164,6 @@ Global
 		{BA0F8218-A7D3-4C90-AA4D-F914A3C974E9}.ReleaseWPFAvalonia|ARM64.Build.0 = Release|ARM64
 		{BA0F8218-A7D3-4C90-AA4D-F914A3C974E9}.ReleaseWPFAvalonia|x64.ActiveCfg = Release|x64
 		{BA0F8218-A7D3-4C90-AA4D-F914A3C974E9}.ReleaseWPFAvalonia|x64.Build.0 = Release|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Debug|ARM64.Build.0 = Debug|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Debug|x64.ActiveCfg = Debug|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Debug|x64.Build.0 = Debug|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.DebugWindowlessRender|ARM64.ActiveCfg = DebugWindowlessRender|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.DebugWindowlessRender|ARM64.Build.0 = DebugWindowlessRender|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.DebugWindowlessRender|x64.ActiveCfg = DebugWindowlessRender|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.DebugWindowlessRender|x64.Build.0 = DebugWindowlessRender|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Release|ARM64.ActiveCfg = Release|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Release|ARM64.Build.0 = Release|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Release|x64.ActiveCfg = Release|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.Release|x64.Build.0 = Release|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.ReleaseWPFAvalonia|ARM64.ActiveCfg = ReleaseWPFAvalonia|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
-		{2A735121-5AE6-4B82-B504-A66FDE8719BC}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
 		{8FDFA2EA-764E-4AAF-9B5B-27C466920E10}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{8FDFA2EA-764E-4AAF-9B5B-27C466920E10}.Debug|ARM64.Build.0 = Debug|ARM64
 		{8FDFA2EA-764E-4AAF-9B5B-27C466920E10}.Debug|x64.ActiveCfg = Debug|x64
@@ -228,6 +212,22 @@ Global
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
 		{EEE81728-1104-4FFD-99D5-DCC214702C38}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|ARM64.Build.0 = Debug|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|x64.ActiveCfg = Debug|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Debug|x64.Build.0 = Debug|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|ARM64.ActiveCfg = DebugWindowlessRender|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|ARM64.Build.0 = DebugWindowlessRender|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|x64.ActiveCfg = DebugWindowlessRender|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.DebugWindowlessRender|x64.Build.0 = DebugWindowlessRender|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|ARM64.ActiveCfg = Release|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|ARM64.Build.0 = Release|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|x64.ActiveCfg = Release|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.Release|x64.Build.0 = Release|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|ARM64.ActiveCfg = ReleaseWPFAvalonia|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|ARM64.Build.0 = ReleaseWPFAvalonia|ARM64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|x64.ActiveCfg = ReleaseWPFAvalonia|x64
+		{16520A1F-5177-4C83-B5A3-45789DA16862}.ReleaseWPFAvalonia|x64.Build.0 = ReleaseWPFAvalonia|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

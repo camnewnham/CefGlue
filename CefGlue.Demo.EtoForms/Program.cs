@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Eto.Forms;
+using System;
+using Xilium.CefGlue;
 using Xilium.CefGlue.Common;
-using Xilium.CefGlue.EtoForms;
-using Eto.Forms;
 using Xilium.CefGlue.Common.Handlers;
+using Xilium.CefGlue.EtoForms;
 
 namespace Xilium.CefGlue.Demo.EtoForms
 {
-    internal static class Program
+    internal class Program
     {
         [STAThread]
         private static int Main(string[] args)
